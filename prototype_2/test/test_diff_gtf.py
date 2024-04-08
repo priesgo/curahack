@@ -8,12 +8,12 @@ class TestDiffGtf(unittest.TestCase):
 
     def test_diff_gtf(self):
 
-        #gtf_file = "../../reference/Homo_sapiens.GRCh38.86.chr1.gtf"
-        gtf_file = "../../reference/Homo_sapiens.GRCh38.108.chr1.gtf"
+        #gtf_file = "../../reference/Homo_sapiens.GRCh38.86.chr1.gtf.gz"
+        gtf_file = "../../reference/Homo_sapiens.GRCh38.108.chr1.gtf.gz"
         gtf = load_gtf(gtf_file)
         self.assertIsNotNone(gtf)
 
-        gtf_file_2 = "../../reference/Homo_sapiens.GRCh38.109.chr1.gtf"
+        gtf_file_2 = "../../reference/Homo_sapiens.GRCh38.109.chr1.gtf.gz"
         gtf_2 = load_gtf(gtf_file_2)
         self.assertIsNotNone(gtf_2)
 
